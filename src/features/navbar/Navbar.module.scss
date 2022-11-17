@@ -1,0 +1,64 @@
+@import "/src/common/styles/variables";
+
+.navbar {
+  width: 100%;
+
+  .head {
+    color: $headersColor;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 44px;
+    border-bottom: $borderColor solid 1px;
+
+    h3 {
+      margin-left: 23px;
+      font-size: 14px;
+      line-height: 11px;
+      font-weight: 400;
+      width: 120px;
+
+      span {
+        width: 100%;
+        font-size: 10px;
+      }
+
+
+    }
+
+    .img {
+      line-height: 0;
+      padding-right: 10px;
+      cursor: pointer;
+    }
+
+
+  }
+
+  .navList {
+    color: $textColor;
+
+    .navLink {
+      height: 32px;
+      width: 100%;
+      padding: 8px 0 8px 23px;
+      display: flex;
+      width: 100%;
+      align-items: center;
+      color: $textColor;
+      text-decoration: none;
+
+      &.active {
+        background-color: $headersColor;
+      }
+
+      span {
+        padding-left: 16px;
+      }
+
+
+    }
+
+
+  }
+}

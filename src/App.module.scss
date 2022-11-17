@@ -1,0 +1,27 @@
+@import "/src/common/styles/variables";
+
+.app {
+  height: 100vh;
+  width: 100vw;
+  background-color: $bgColorMain;
+  .header {
+    height: 44px;
+    width: 100vw;
+    border-bottom: $borderColor solid 1px;
+  }
+  .wrapper {
+    display: flex;
+    height: calc(100% - 44px);
+
+    .navbar {
+      width: 234px;
+      border-right: $borderColor solid 1px;
+    }
+    .table {
+      width: calc(100% - 234px);
+      background-color: $bgTableColor;
+    }
+
+  }
+
+}

@@ -1,0 +1,39 @@
+@import "/src/common/styles/variables";
+
+.header {
+  display: flex;
+  height: 100%;
+
+  .nav {
+    display: flex;
+    align-items: center;
+    .navLink{
+      margin-left: 24px;
+      &:last-child{
+        margin-left: 27px;
+      }
+    }
+  }
+
+  .links {
+    display: flex;
+    align-items: center;
+    margin-left: 34px;
+    height: 100%;
+    .link {
+      color: $headersColor;
+      text-decoration: none;
+      font-size: 14px;
+      line-height: 16px;
+      font-weight: 400;
+      &:last-child{
+        margin-left: 28px;
+      }
+      &.active {
+        color: $textColor;
+        border-bottom: $textColor solid 2px;
+        padding: 13px 0;
+      }
+    }
+  }
+}

@@ -1,0 +1,14 @@
+@import "../../../common/styles/variables";
+
+.level {
+
+  display: flex;
+  justify-content: end;
+
+  button {
+    border: none;
+    outline: none;
+    background: none;
+    cursor: pointer;
+  }
+}

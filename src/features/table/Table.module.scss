@@ -1,0 +1,59 @@
+@import "/src/common/styles/variables";
+
+.table {
+  color: $textColor;
+  width: 100%;
+
+  .head {
+    height: 44px;
+    border-bottom: $borderColor solid 1px;
+
+    .tab {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 312px;
+      height: 100%;
+      border-right: $borderColor solid 1px;
+
+      h3 {
+        font-size: 18px;
+        line-height: 21px;
+        font-weight: 400;
+      }
+    }
+  }
+
+  .tableBlock {
+    margin: 0 10px;
+    width: calc(100% - 20px);
+    border-collapse: collapse;
+
+    .row {
+
+      border-top: $borderColor solid 1px;
+      height: 60px;
+      width: 200px;
+
+
+
+      .cell {
+        text-align: start;
+        padding-left: 12px;
+        width: 200px;
+        &:nth-child(1) {
+          width: 110px;
+        }
+        &:nth-child(2) {
+          width: 760px;
+        }
+      }
+    }
+
+    .rowHead {
+      height: 40px;
+      border-top: none;
+    }
+
+  }
+}
